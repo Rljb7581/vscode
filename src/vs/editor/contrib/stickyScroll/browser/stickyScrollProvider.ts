@@ -83,6 +83,7 @@ export class StickyLineCandidateProvider extends Disposable implements IStickyLi
 	}
 
 	private readConfiguration() {
+		console.log('readConfiguration');
 		const options = this._editor.getOption(EditorOption.stickyScroll);
 		if (options.enabled === false) {
 			this._sessionStore.clear();
